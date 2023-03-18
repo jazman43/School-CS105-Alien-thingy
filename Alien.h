@@ -13,6 +13,8 @@ private:
 public:
 	Alien(float w, float h, char g);
 
+	Alien() {}
+
 	float getWeight() const;
 
 	float getHeight() const;

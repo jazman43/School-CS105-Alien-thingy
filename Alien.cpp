@@ -30,6 +30,12 @@ float Alien::getPerstige() const
 
 Alien Alien::operator+(const Alien& other) const
 {
+    if (gender == other.gender) {
+        std::cout << "Aliens cannot be the same gender!\n";
+        return Alien();
+    }
+
+
     float offspringWeight = (weight + other.weight) / 2;
     float offspringHeight = (height + other.height) / 2;
     char offspringGender = (rand() % 2 == 0) ? 'm' : 'f';
