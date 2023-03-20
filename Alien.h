@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-
+//alien class for overloading
 class Alien
 {
 private:
@@ -11,10 +11,12 @@ private:
 	char gender;
 
 public:
+	// constructor 
 	Alien(float w, float h, char g);
 
 	Alien() {}
 
+	//getters
 	float getWeight() const;
 
 	float getHeight() const;
@@ -23,6 +25,7 @@ public:
 
 	float getPerstige() const;
 
+	//operators overloaders
 	Alien operator+(const Alien& other) const;
 
 	bool operator==(const Alien& other) const;

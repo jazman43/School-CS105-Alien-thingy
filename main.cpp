@@ -58,9 +58,9 @@ int main()
 			//second case is to get to index's of the aliens(parents) and using them to crate one new alien
 			int parentIndex1, parentIndex2;
 			//askes for user input of the two index's
-			std::cout << "Enter index of perent 1: ";
+			std::cout << "Enter index of parent 1: ";
 			std::cin >> parentIndex1;
-			std::cout << "Enter index of perent 2: ";
+			std::cout << "Enter index of parent 2: ";
 			std::cin >> parentIndex2;
 
 			//checks if they are vailed index's
